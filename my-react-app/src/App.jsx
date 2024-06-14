@@ -5,7 +5,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('(link unavailable)')
+    fetch('https://jsonplaceholder.typicode.com/posts)')
       .then(response => {
         if (!response.ok) {
           throw new Error(response.statusText);
@@ -22,7 +22,7 @@ function App() {
         <p style={{ color: 'red' }}>{error}</p>
       ) : (
         posts.map(post => (
-          <div key={(link unavailable)}>
+          <div key={('https://jsonplaceholder.typicode.com/posts)')}>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
           </div>
